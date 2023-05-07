@@ -5,7 +5,7 @@
   tasks:
      - name: Print URL
        ansible.builtin.debug:
-        msg: URL - {{ URL }
+        msg: URL - {{ URL }}
 # In ansible variable will be accessed using double flower bracess {{ }}
 #Ansible Supports double quotes and single quotes also , however quotes are not mandatory in all cases
 #Quotes are mandatory if value start with a variable, meaning
