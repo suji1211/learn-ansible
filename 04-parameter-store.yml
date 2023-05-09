@@ -1,5 +1,5 @@
 - name: Print a Parameter
-  hosts: all
+  hosts: local
   tasks:
    - name: print a parameter
      ansible.builtin.debug:
