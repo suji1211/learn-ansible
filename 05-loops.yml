@@ -5,14 +5,14 @@
     - name: Demo tasks for loops
       ansible.builtin.debug:
         msg: Fruit Name - {{ item }}
-        loop:
-          - apple
-          - banana
+      loop:
+        - apple
+        - banana
 
-          - name: Demo tasks for loops
-            ansible.builtin.debug:
-              msg: Fruit Name - {{ item.name  }}, Quantity- {{ item.quantity }}
-              loop:
-                - {name: apple,quantity: 10}
-                - {name: banana,quantity: 20}
+    - name: Demo tasks for loops
+      ansible.builtin.debug:
+         msg: Fruit Name - {{ item.name  }}, Quantity- {{ item.quantity }}
+      loop:
+         - {name: apple,quantity: 10}
+         - {name: banana,quantity: 20}
 
